@@ -1,9 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Child from './meeting 3 props/latihan.jsx'
+import App from'./meeting 4 atomic design/Register/App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Child />
+    <App />
   </StrictMode>,
 )
