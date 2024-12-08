@@ -1,28 +1,61 @@
 import React from "react";
 
-function coba() {
-    
-    const number = 5;
 
-    let result;
-    if (number > 3) {
-        result = 'Greater than 3';
-    } else {
-        result = 'Less than 3';
-    };
+// If conditional
+// function test ({name, benar}) {
+//     if (benar) {
+//         return <li>{name} true</li>
+//     } else {
+//         return <li>{name} false</li>
+//     }
+// }
 
-    const ternaryresult = number > 3 ? 'Greater than 3' : 'Less than 3';
+// export default function conditional () {
+//   return (
+//     <div>
+//         <ul>
+//       <test name="A" benar={true} />
+//       <test name="B" benar={false} />
+//       </ul>
+//     </div>
+//   );
+// }
 
-    const andresult = number > 3 && 'Greater than 3';
 
-    return (
-        <div>
-            <h1>{result}</h1>
-            <h1>{ternaryresult}</h1>
-            <h1>{andresult}</h1>
-        </div>
-    )
 
+
+
+// Ternary Operator
+// function test ({name, benar}) {
+//   return benar ? <li>{name} true</li> : <li>{name} false</li>
+// }
+
+// export default function conditional () {
+//   return (
+//     <div>
+//         <ul>
+//       <test name="A" benar={true} />
+//       <test name="B" benar={false} />
+//       </ul>
+//     </div>
+//   );
+// }
+
+
+// Logical And
+
+function test ({name, benar, isChecklist}) {
+  return (benar && isChecklist) ? <li>{name} ✅</li> : <li>{name} ❌</li>
 }
 
-export default coba
+export default function conditional () {
+  return (
+    <div>
+        <ul>
+      <test name="A" benar={true} isChecklist={true} />
+      <test name="B" benar={false} isChecklist={false} />
+      </ul>
+    </div>
+  );
+}
+
