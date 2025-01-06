@@ -1,9 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import WelcomeMessage from './meeting 5 Conditional Rendering/Praktek.jsx';
+import Counter from './meeting 8 usesate/praktek.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <WelcomeMessage />
+    <Counter />
   </StrictMode>,
 )
+  
