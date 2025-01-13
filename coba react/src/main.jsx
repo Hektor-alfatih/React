@@ -1,10 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './meeting 9 UseState MAP & ARRAY/Praktek.jsx';
+import Counter from './meeting 10 useEffect/Praktek.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <Counter />
   </StrictMode>,
 )
   
